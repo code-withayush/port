@@ -1,12 +1,13 @@
+// Navbar.jsx
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import { Link, useLocation } from "react-router-dom"; // useLocation for active route
 import { HiMenu, HiX } from "react-icons/hi"; // Hamburger menu icons
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("");
+  const location = useLocation();
 
-  // Close mobile menu when window is resized
+  // Close mobile menu on window resize
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) setNavOpen(false);
@@ -16,10 +17,13 @@ const Navbar = () => {
   }, []);
 
   const sections = [
-    { name: "Projects", id: "projects" },
-    { name: "Education", id: "education" },
-    { name: "Internships", id: "internships" },
-    { name: "Certifications", id: "certifications" },
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Projects", path: "/projects" },
+    { name: "Education", path: "/education" },
+    { name: "Internships", path: "/internships" },
+    { name: "Certifications", path: "/certifications" },
+     { name: "Contact Me", path: "/contact" },
   ];
 
   return (
@@ -34,16 +38,11 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-6">
           {sections.map((section) => (
             <Link
-              key={section.id}
-              to={section.id}
-              smooth={true}
-              duration={500}
-              spy={true}
-              offset={-80} // offset for sticky navbar
+              key={section.path}
+              to={section.path}
               className={`cursor-pointer hover:text-blue-500 transition ${
-                activeSection === section.id ? "text-blue-600 font-semibold" : ""
+                location.pathname === section.path ? "text-blue-600 font-semibold" : ""
               }`}
-              onSetActive={() => setActiveSection(section.id)}
             >
               {section.name}
             </Link>
@@ -66,14 +65,12 @@ const Navbar = () => {
         <div className="md:hidden bg-white shadow-lg">
           <ul className="flex flex-col px-4 py-4 space-y-3">
             {sections.map((section) => (
-              <li key={section.id}>
+              <li key={section.path}>
                 <Link
-                  to={section.id}
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  offset={-80}
-                  className="cursor-pointer block text-gray-700 hover:text-blue-500 transition"
+                  to={section.path}
+                  className={`block text-gray-700 hover:text-blue-500 transition ${
+                    location.pathname === section.path ? "text-blue-600 font-semibold" : ""
+                  }`}
                   onClick={() => setNavOpen(false)}
                 >
                   {section.name}

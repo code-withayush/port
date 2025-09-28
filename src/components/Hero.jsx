@@ -36,7 +36,7 @@ const Hero = () => {
               <FaLinkedin /> LinkedIn
             </a>
             <a 
-              href="/Ayush_Kumar_Resume.pdf" 
+              href="Ayush Kumar resume.pdf" 
               download 
               className="bg-blue-500 text-white px-6 py-3 rounded-lg transform transition duration-300 hover:scale-110 hover:shadow-xl hover:bg-blue-600"
             >
