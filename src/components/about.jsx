@@ -1,5 +1,6 @@
 import React from "react";
 import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaNodeJs } from "react-icons/fa";
+import MyImage from "../assets/15.jpg";
 
 const AboutMe = () => {
   const skills = [
@@ -19,7 +20,7 @@ const AboutMe = () => {
         {/* Profile Image */}
         <div className="w-56 h-56 rounded-full overflow-hidden shadow-xl transform hover:scale-105 transition">
           <img
-            src="https://avatars.githubusercontent.com/u/your-github-id?v=4"
+            src={MyImage}
             alt="Ayush Kumar"
             className="w-full h-full object-cover"
           />

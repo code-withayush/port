@@ -5,14 +5,23 @@ const internships = [
   {
     name: "Artificial Intelligence",
     period: "Feb 2025 – April 2025",
+    company: "Skill Dunia",
     description: "Completed 2-month AI Internship provided by Skill Dunia.",
-    link: "#",
+    link: "https://drive.google.com/file/d/1HLjBEOOv0OSR2giqgKUPjLzYKKgo37q7/view?usp=drivesdk",
   },
   {
     name: "MERN Stack Developer",
-    period: "June 2024 – July 2024",
+    period: "June 2025 – July 2025",
+    company: "CSIR-CRRI, New Delhi",
     description: "Completed 1-month MERN Stack Internship provided by CSIR-CRRI, New Delhi.",
-    link: "#",
+    link: "https://drive.google.com/file/d/1ZLjfkiK8OXnxUtu0weHA0eoUPX33k6g4/view?usp=drivesdk",
+  },
+  {
+    name: "Artificial Intelligence",
+    period: " June 2025 – August 2025",
+    company: "Yhills",
+    description: "Completed 2-month AI Internship provided by Skill Dunia.",
+    link: "https://drive.google.com/file/d/12KxeAIhecyBq2A9kJWep0kty7LCQ2qza/view?usp=drivesdk",
   },
 ];
 
@@ -32,6 +41,10 @@ const Internships = () => {
               <h3 className="text-xl font-bold mb-2 group-hover:text-blue-500 transition">{intn.name}</h3>
               <span className="inline-block text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded-full mb-4 animate-pulse">
                 {intn.period}
+              </span>
+              <br></br>
+              <span className="inline-block text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded-full mb-4 animate-pulse">
+                {intn.company}
               </span>
               <p className="text-gray-700 mb-4">{intn.description}</p>
               <a

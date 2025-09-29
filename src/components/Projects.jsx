@@ -3,14 +3,6 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const projects = [
   {
-    name: "Coding Ninja Clone",
-    tech: ["React", "Tailwind CSS"],
-    linkLive: "https://codingninjaclone.netlify.app/",
-    linkGit: "https://github.com/code-withayush/coding-ninja",
-    description: "A responsive clone of the Coding Ninjas website built with React and Tailwind CSS. Implements real-world UI components, navigation, and dynamic content to showcase frontend skills. Deployed live to demonstrate professional layout, responsiveness, and interactive design.",
-    image: "",
-  },
-  {
     name: "Task Manager",
     tech: ["React.js", "Node.js", "Express.js", "MongoDB "],
     linkLive: "https://task-manager7.onrender.com",
@@ -19,21 +11,15 @@ const projects = [
     image: "",
   },
   {
-    name: "Rock-Paper-Scissors Game",
-    tech: ["HTML", "CSS", "JS"],
-    linkLive: "#",
-    linkGit: "#",
-    description: "Interactive game with real-time scoring and dynamic UI.",
+    name: "Coding Ninja Clone",
+    tech: ["React", "Tailwind CSS"],
+    linkLive: "https://codingninjaclone.netlify.app/",
+    linkGit: "https://github.com/code-withayush/coding-ninja",
+    description: "A responsive clone of the Coding Ninjas website built with React and Tailwind CSS. Implements real-world UI components, navigation, and dynamic content to showcase frontend skills. Deployed live to demonstrate professional layout, responsiveness, and interactive design.",
     image: "",
   },
-  {
-    name: "Calculator",
-    tech: ["HTML", "CSS", "JS"],
-    linkLive: "#",
-    linkGit: "#",
-    description: "Responsive web calculator with basic arithmetic and error handling.",
-    image: "",
-  },
+  
+  
   {
     name: "Weather App",
     tech: ["React", "Tailwind CSS","Api Integration"],
@@ -55,17 +41,26 @@ const projects = [
     tech: ["Html", "Css","JavaScript"],
     linkLive: "https://snake-game-5-ineh.onrender.com/",
     linkGit: "https://github.com/code-withayush/snake-game?tab=readme-ov-file",
-    description: "Responsive clone of Coding Ninjas website with real-world UI.",
+    description: "A classic Snake game built with HTML, CSS, and JavaScript. Features interactive gameplay, real-time scoring, and dynamic controls for an engaging experience.",
     image: "",
   },
   {
-    name: "Coding Ninja Clone",
-    tech: ["React", "Tailwind CSS"],
+    name: "Rock-Paper-Scissors Game",
+    tech: ["HTML", "CSS", "JS"],
     linkLive: "#",
     linkGit: "#",
-    description: "Responsive clone of Coding Ninjas website with real-world UI.",
+    description: "Interactive game with real-time scoring and dynamic UI.",
     image: "",
   },
+  {
+    name: "Calculator",
+    tech: ["HTML", "CSS", "JS"],
+    linkLive: "#",
+    linkGit: "#",
+    description: "Responsive web calculator with basic arithmetic and error handling.",
+    image: "",
+  },
+
 ];
 
 const Projects = () => {

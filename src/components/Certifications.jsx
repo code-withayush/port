@@ -2,14 +2,14 @@ import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const certifications = [
-  { title: "Tailwind CSS Bootcamp – June", link: "#" },
-  { title: "Gemini AI Clone (HTML, CSS, JS) – June", link: "#" },
-  { title: "Data Analytics Job Simulation by Deloitte – July", link: "#" },
-  { title: "React + Redux – April 2025", link: "#" },
-  { title: "JavaScript – April 2025", link: "#" },
-  { title: "Java-core – Xtrude Engineering (Sept 2023)", link: "#" },
-  { title: "Front-End Development – Xtrude Engineering (Nov 2024)", link: "#" },
-  { title: "React.js – Xtrude Engineering (Aug 2025)", link: "#" },
+  { title: "Tailwind CSS Bootcamp – June", link: "https://drive.google.com/file/d/1V7gU95VB8M4cYsMlAF3MjFB8fLgmwlBq/view" },
+  { title: "Gemini AI Clone (HTML, CSS, JS) – June", link: "https://drive.google.com/file/d/1VFo-hd50KDoIe-uCfL5wt3-a27-WVE-o/view" },
+  { title: "Data Analytics Job Simulation by Deloitte – July", link: "https://drive.google.com/file/d/1GAVygAEzpXK2PNB23f04-DIxspm1y2L_/view" },
+  { title: "React + Redux – April 2025", link: "https://drive.google.com/file/d/1omuRNLpwoCUmDw-y8-ZUl2RdI4eaTvBj/view" },
+  { title: "JavaScript – April 2025", link: "https://drive.google.com/file/d/1crr8t0ZW4wxMzj7KpE6KBaWPJE5eq2mo/view" },
+  { title: "Java-core – Xtrude Engineering (Sept 2023)", link: "https://drive.google.com/file/d/1xXU4aG8mhh0UuumDoDgC3ub3sQRyz9_n/view" },
+  { title: "Front-End Development – Xtrude Engineering (Nov 2024)", link: "https://drive.google.com/file/d/1Fl2mND_o4HgmzRK2agkVjVMCOS9B11ma/view" },
+  { title: "React.js – Xtrude Engineering (Aug 2025)", link: "https://drive.google.com/file/d/1DUSaIDCjq_tGoL7MenL5mcw6osvW0ZDG/view" },
 ];
 
 const Certifications = () => {

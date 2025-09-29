@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import ProjectSuggestions from "./components/projectsuggestions";
 import AboutMe from "./components/about";
 import Contact from "./components/Contact";
+import ScrollReveal from "./components/ScrollReveal"; // ✅ Correct import
 
 function App() {
   return (
@@ -23,10 +24,23 @@ function App() {
             path="/"
             element={
               <>
-                <Hero />
-                <AboutMe />
-                <ProjectSuggestions />
-                <Footer />
+                {/* Wrap Hero with ScrollReveal */}
+                <ScrollReveal>
+                  <Hero />
+                </ScrollReveal>
+
+                {/* Other components can also use ScrollReveal */}
+                <ScrollReveal>
+                  <AboutMe />
+                </ScrollReveal>
+
+                <ScrollReveal>
+                  <ProjectSuggestions />
+                </ScrollReveal>
+
+                <ScrollReveal>
+                  <Footer />
+                </ScrollReveal>
               </>
             }
           />
@@ -36,7 +50,6 @@ function App() {
           <Route path="/certifications" element={<Certifications />} />
           <Route path="/about" element={<AboutMe />} />
           <Route path="/contact" element={<Contact />} />
-
         </Routes>
       </div>
     </BrowserRouter>
