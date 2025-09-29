@@ -12,16 +12,16 @@ const Footer = () => {
         {/* Branding */}
         <div className="flex flex-col space-y-4 animate-fadeInUp" style={{ animationDelay: "0s" }}>
           <h2 className="text-2xl font-bold">Ayush Kumar</h2>
-          <p className="text-gray-400">Frontend Developer | React & Tailwind Enthusiast</p>
+          <p className="text-gray-400">Full Stack Developer | Mern Enthusiast</p>
           <div className="flex gap-4 mt-2">
             {[{
               icon: <FaLinkedin />,
-              link: "https://www.linkedin.com/in/ayushkumar",
+              link: "https://www.linkedin.com/in/ayush-kumar-b87a8830b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
               bg: "from-blue-500 to-indigo-600"
             },
             {
               icon: <FaGithub />,
-              link: "https://github.com/ayushkumar",
+              link: "https://github.com/code-withayush",
               bg: "from-gray-700 to-gray-900"
             },
             {

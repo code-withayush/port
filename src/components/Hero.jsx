@@ -31,7 +31,7 @@ const Hero = () => {
               <FaEnvelope /> Email Me
             </a>
             <a 
-              href="https://www.linkedin.com/in/ayushkumar" 
+              href="https://www.linkedin.com/in/ayush-kumar-b87a8830b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white text-blue-500 px-6 py-3 rounded-lg flex items-center gap-2 transform transition duration-300 hover:scale-110 hover:shadow-xl hover:bg-blue-100"
