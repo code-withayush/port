@@ -1,6 +1,9 @@
 import React from "react";
 import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaNodeJs } from "react-icons/fa";
 import MyImage from "../assets/15.jpg";
+import { TbBrandMysql } from "react-icons/tb";
+import { DiMongodb } from "react-icons/di";
+import { SiExpress } from "react-icons/si";
 
 const AboutMe = () => {
   const skills = [
@@ -9,9 +12,9 @@ const AboutMe = () => {
     { name: "HTML5", icon: <FaHtml5 className="text-orange-500 text-3xl" />, level: 95 },
     { name: "CSS3", icon: <FaCss3Alt className="text-blue-600 text-3xl" />, level: 90 },
     { name: "Node.js", icon: <FaNodeJs className="text-green-600 text-3xl" />, level: 70 },
-     { name: "Express.js", icon: <FaNodeJs className="text-green-600 text-3xl" />, level: 70 },
-      { name: "Mongodb", icon: <FaNodeJs className="text-green-600 text-3xl" />, level: 70 },
-       { name: "Sql", icon: <FaNodeJs className="text-green-600 text-3xl" />, level: 70 },
+     { name: "Express.js", icon: <SiExpress className="text-green-600 text-3xl" />, level: 70 },
+      { name: "Mongodb", icon: <DiMongodb  className="text-green-600 text-3xl" />, level: 70 },
+       { name: "Sql", icon: <TbBrandMysql  className="text-green-600 text-3xl" />, level: 70 },
   ];
 
   return (
